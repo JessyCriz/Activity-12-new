@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    font-size: 45px;
+    color: rgb(7, 7, 7);
+    margin: 30px 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 300px;
+    width: 400px;
+    border-radius: 50px;
+    background: linear-gradient(124deg #0ba9da, #c2a0a0);
+    box-shadow: 20px 20px 60px #70e5e9,
+                    -20px -20px 60px #394a5e;
+}               
+
+#task {
+    border: none;
+    border-bottom: 2px solid #7e6ad6;
+    background-color: #cccccc;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#submit {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #505050;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+#submit:hover {
+    background-color: rgb(212, 140, 46);
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: aqua;
+    box-shadow: 0 2px 2px #c2a0a0;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+li p {
+    font-size: 18px;
+    margin: 0;
+}
+
+li button:hover {
+    color: #c2a0a0;
+    scale: 110%;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #000000;
+}
